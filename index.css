@@ -14,7 +14,7 @@
 body{
     background-image: url('images/bg.png');
     background-repeat: no-repeat;
-    background-size:inherit;
+    background-size:auto;
     }
 
 
@@ -28,7 +28,7 @@ nav {
     border-left: none;
     border-right: none;
     border-top: none;
-    border-image: linear-gradient(to right, red 10%, yellow 25%, orange 50%,orangered 50%, green 75%, teal 75%) 5;
+    border-image: linear-gradient(to right, red 10%, yellow 25%, orange 50%,orangered 50%, green 75%, teal 75%) 1;
 }
 
 
@@ -75,22 +75,20 @@ a:active {
 
 
 main {
-    position: relative;
-    top: 20vh;
-    bottom: 20vh;
-    left: 3vw;
-    right: 20vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'momcakeb';
     text-align: center;
     color: white;
     font-size: 30px;
     border: solid 5px;
-    border-image: linear-gradient(to right,red 10%, yellow 25%, orange 50%,orangered 50%, green 75%, teal 75%) 5;
+    border-image: linear-gradient(to right,red 10%, yellow 25%, orange 50%,orangered 50%, green 75%, teal 75%) 1;
     height: fit-content;
     width: fit-content;
     background-color: black;
-    padding-top: 10px;
-    padding-bottom: 10px
+    padding: 10px;
 }
 
 
@@ -105,5 +103,6 @@ footer {
     border-top: solid 5px;
     border-left: none;
     border-right: none;
-    border-image: linear-gradient(to right, red 10%, yellow 25%, orange 50%,orangered 50%, green 75%, teal 75%) 5;
+    border-bottom: none;
+    border-image: linear-gradient(to right, red 10%, yellow 25%, orange 50%,orangered 50%, green 75%, teal 75%) 1;
 }
