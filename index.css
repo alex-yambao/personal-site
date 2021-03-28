@@ -18,6 +18,7 @@
 }
 
 body{
+    position: fixed;
     background: url('images/bg.png') no-repeat center center fixed;
     background-size: auto;
     }
