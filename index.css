@@ -79,6 +79,7 @@ main {
     width: fit-content;
     padding: 2vh;
     text-align: center;
+    overflow-wrap: break-word;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.1);
 }    
