@@ -86,13 +86,21 @@ main {
     color: white;
     font-size: 30px;
     border: solid 3px;
-    border-image: linear-gradient(to right,red 10%, yellow 25%, orange 50%,orangered 50%, green 75%, teal 75%) 1;
+    border-image: linear-gradient(to right, red 10%, yellow 25%, orange 50%,orangered 50%, purple 80%, green 75%, teal 75%) 1;
     height: fit-content;
     width: fit-content;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
 }
 
+
+.indexphoto {
+    position: fixed;
+    width:100%;
+    top: 35%;
+    right: -54%;
+    background-repeat: no-repeat;
+}
 
 footer {
     position: fixed;
