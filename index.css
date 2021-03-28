@@ -17,7 +17,7 @@
     padding: 0;
 }
 
-.container {
+body {
     position: fixed;
     background: url('images/bg.png') no-repeat center center fixed;
     background-size: 100%;
@@ -117,4 +117,5 @@ footer {
     background-color: black;
     text-align: right;
     border-top: solid white 2px;
+    margin: 0;
 }
