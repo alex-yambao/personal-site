@@ -11,111 +11,116 @@
     font-style: normal;
     font-weight: normal;
 }
-
 * {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10vh 80vh 10vh;
+    margin: 0;
     padding: 0;
 }
 
-body {
-    position: fixed;
-    background: url('images/bg.png') no-repeat center center fixed;
-    background-size: 100%;
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    }
 
-
-nav {
-    position: fixed;
-    background-color: black;
-    height: 50px;
-    width: 100%;
-    top: 0;
-    padding: 10px;
-    border-bottom: solid white 2px;
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background: black;
+    border-image: linear-gradient(to right, red 10%, yellow 25%, orange 50%,orangered 50%, purple 80%, green 75%, teal 75%) 1;
+    border-bottom: solid 5px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
 }
-
 
 li {
     display: inline-block;
+    list-style: none;
     font-family: 'momcakeb';
-    font-size: 32px;
+    font-size: 3vh;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (3,1fr);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: url('images/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;   
+}
+
+.center {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-family: 'momcaket';
+    font-size: 3vh;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    padding: 2vh;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+}    
+
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: right;
+    background: black;
+    padding: 3vh;
+    border-image: linear-gradient(to right, red 10%, yellow 25%, orange 50%,orangered 50%, purple 80%, green 75%, teal 75%) 1;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: solid 5px;
 }
 
 a {
     color: white;
-    font-size: 32px;
+    font-size: 3vh;
     font-family: 'momcakeb';
     text-decoration: none;
 }
 
 a:link {
     color: white;
-    font-size: 32px;
+    font-size: 3vh;
     font-family: 'momcakeb';
     text-decoration: none;
 }
 
 a:visited {
     color: white;
-    font-size: 32px;
+    font-size: 3vh;
     font-family: 'momcakeb';
     text-decoration: none;
 }
 
 a:hover {
     color: white;
-    font-size: 32px;
+    font-size: 3vh;
     font-family: 'momcakeb';
     text-decoration: underline;
 }
 
 a:active {
     color: white;
-    font-size: 32px;
+    font-size: 3vh;
     font-family: 'momcakeb';
     text-decoration: underline;
-}
-
-
-main {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'momcakeb';
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    border: solid 3px;
-    border-image: linear-gradient(to right, red 10%, yellow 25%, orange 50%,orangered 50%, purple 80%, green 75%, teal 75%) 1;
-    height: fit-content;
-    width: fit-content;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 5px;
-}
-
-
-.indexphoto {
-    position: fixed;
-    height: 100%;
-    width:100%;
-    top: 35%;
-    right: -54%;
-    background-repeat: no-repeat;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    padding-top: 10px;
-    background-color: black;
-    text-align: right;
-    border-top: solid white 2px;
-    margin: 0;
 }
