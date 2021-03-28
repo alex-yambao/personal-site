@@ -20,7 +20,9 @@
 body{
     position: fixed;
     background: url('images/bg.png') no-repeat center center fixed;
-    background-size: auto;
+    background-size: 100%;
+    margin: 0px;
+    padding: 0px;
     }
 
 
