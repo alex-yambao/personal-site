@@ -24,6 +24,8 @@ body {
     grid-template-rows: 10vh 80vh 10vh;
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -62,6 +64,7 @@ main {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    height: 100%;
     width: 100%;
     background: url('images/bg.png');
     background-repeat: no-repeat;
