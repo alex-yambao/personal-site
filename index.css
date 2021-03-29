@@ -81,7 +81,9 @@ main {
     font-size: 3vh;
     color: white;
     height: 100%;
-    width: 107%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     padding: 2vh;
     text-align: center;
     overflow-wrap: break-word;
