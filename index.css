@@ -64,13 +64,7 @@ main {
     grid-row-start: 2;
     grid-row-end: 3;
     box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    background: url('images/bg.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;   
 }
 
 .center {
@@ -82,15 +76,13 @@ main {
     font-family: 'momcaket';
     font-size: 3vh;
     color: white;
-    height: 100%;
-    width: 100%;
-    max-height: 100%;
-    max-width: 100%;
+    height: fit-content;
+    width: fit-content;
     padding: 1vh;
     text-align: center;
     overflow-wrap: break-word;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
 }    
 
 
