@@ -12,138 +12,381 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'blanka';
+    src: url('fonts/Blanka-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
 * {
     margin: 0;
-    text-shadow: 2px 2px 10px black;
+    padding: 0;
 }
 
 body {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 10vh 80vh 10vh;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
+   display: flex;
+   flex-flow: column wrap;
+   height: 100%;
+   width: 100%;
+   background: #fbeec1;
 }
-
 
 header {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    background: rgba(0, 0, 0, .9);
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   order: 1;
+   background: url('images/headerimg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   flex: 1 2 1;
+   color: white;
 }
 
-header img {
-    grid-column-start: 12;
-    grid-column-end: 13;
-    padding: 2vh;
+
+.topnav {
+   display: flex;
+   order: 1;
+   width: 100%;
+   height: 10vh;
+   justify-content: center;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.8);
 }
 
-nav {
-    padding: 3vh;
-    word-spacing: 1vw
+.intro {
+   order: 2;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   font-family: 'momcakeb';
+   text-shadow: 1px 0px 1px black;
+   font-size: 5.53vh;
+   padding: 2vw;
+   background-color: rgba(0, 0, 0, 0.5);
 }
 
-li {
-    display: inline-block;
-    list-style: none;
-    font-family: 'momcakeb';
-    font-size: 3vh;
+.topnavlinks {
+   display: flex;
+   justify-content: center;
+   margin-left: 3vw;
+   border-bottom:#8D8741 solid 2px;
+}
+
+
+.initialstop {
+   align-self: center;
+   font-size: 5vw;
+   font-family: 'blanka', sans-serif;
+   color: whitesmoke;
+}
+
+
+.topnavimg {
+   display: flex;
+   height: 5vh;
+   margin-top: 1.5vh;
+}
+
+
+.topnavlinks a {
+   display: flex;
+   font-family: 'momcakeb', sans-serif;
+   font-size: 3vh;
+   align-items: center;
+   justify-content: center;
+   align-self: center;
+   padding: 3vh;
 }
 
 
 main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat (3,1fr);
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
+   display: flex;
+   flex-flow: column nowrap;
+   order: 2;
+   flex: 1 1 0;
+   justify-content: center;
+   font-family: 'momcaket';
+   border-top: #8D8741 solid 2px;
 }
 
-.center {
-    display: inline-block;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    font-family: 'momcaket';
-    font-size: 2vh;
-    color: white;
-    height: fit-content;
-    width: 100%;
-    padding: 1vh;
-    text-align: center;
-    overflow-wrap: break-word;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}    
+
+.about {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   order: 2;
+   text-align: center;
+   align-items: center;
+   font-family: 'momcaket', sans-serif;
+   font-size: 2vh;
+   text-shadow: 1px 0px 1px black;
+   padding: 3vh;
+   margin: 3vh;
+   line-height: 4vh;
+}
+
+.about h2 {
+   text-decoration: underline #8D8741 solid 5px;
+   font-family: 'momcakeb', sans-serif;
+   margin: 2vh;
+   font-size: 5vh;
+   letter-spacing: 1vw;
+}
+
+.about h3 {
+   font-family: 'momcakeb', sans-serif;
+   margin: 2vh;
+   font-size: 2vh;
+   letter-spacing: 0.2vw;
+}
+
+
+
+.about img {
+   border-radius: 40%;
+}
+
+.skills {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   order: 2;
+   text-align: center;
+   align-items: center;
+   font-family: 'momcaket', sans-serif;
+   text-shadow: 1px 0px 1px black;
+   font-size: 2vh;
+   padding: 3vh;
+   margin: 3vh;
+   line-height: 4vh;
+}
+
+.skills h2 {
+   text-decoration: underline #8D8741 solid 5px;
+   font-family: 'momcakeb', sans-serif;
+   margin: 2vh;
+   font-size: 5vh;
+   letter-spacing: 1vw;
+}
+
+.skills h3 {
+   font-family: 'momcakeb', sans-serif;
+   margin: 2vh;
+   font-size: 2vh;
+   letter-spacing: 0.2vw;
+}
+
+.skills li {
+   list-style:square;
+}
+
+.skills img {
+   height: 10vh;
+   border: underline #8D8741 solid 5px;
+   border-radius: 80%;
+}
+
+
+.vision {
+   display: flex;
+   order: 3;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   font-family: 'momcaket', sans-serif;
+   font-size: 3vh;
+   padding: 3vh;
+   margin: 3vh;
+   line-height: 4vh;
+   letter-spacing: 1vw;
+}
+
+.vision h2 {
+   text-decoration: underline #8D8741 solid 5px;
+   font-family: 'momcakeb', sans-serif;
+   margin: 2vh;
+   font-size: 5vh;
+   letter-spacing: 1vw;
+}
+
+
+.vision h3 {
+   font-family: 'momcakeb', sans-serif;
+   margin: 2vh;
+   font-size: 2vh;
+   letter-spacing: 0.2vw;
+}
+
+.visionimg {
+   height: 10vh;
+   border-radius: 80%;
+}
+
+.projects {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+}
+
 
 
 footer {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    text-align: right;
-    background:  rgba(0, 0, 0, 0.9);
-    padding: 3vh;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   order: 3;
+   width: 100%;
+   font-family: 'momcaket';
 }
 
-a {
-    color: white;
-    font-size: 3vh;
-    font-family: 'momcakeb';
-    text-decoration: none;
+.about {
+   order: 1;
+   display: flex;
+   justify-content: center;
+   flex-flow: column wrap;
+   text-align: center;
 }
 
-a:link {
-    color: white;
-    font-size: 3vh;
-    font-family: 'momcakeb';
-    text-decoration: none;
+.headshot {
+   width: 10vh;
+   align-self: center;
+
 }
 
-a:visited {
-    color: white;
-    font-size: 3vh;
-    font-family: 'momcakeb';
-    text-decoration: none;
+.bottomnav {
+   display: flex;
+   text-align: center;
+   font-size: 5vw;
+   bottom: 0;
+   order: 3;
+   flex: 1 1 1;
+   width: 100%;
+   height: 10vh;
+   border-top: #8D8741 solid 5px;
+   justify-content: center;
+   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.socialmedialinks{
+   order: 2;
+   text-align: center;
+   margin: 2vh;
+}
+
+.socialmedialinks img {
+   height: 5vh;
+   padding: 1vh;
+}
+
+
+.botnavlinks {
+   display: flex;
+   width: 100%;
+}
+
+
+.botnavimg {
+   display: flex;
+   height: 5vh;
+   padding: 2vh;
+}
+
+.initialsbot {
+   align-self: center;
+   font-size: 5vh;
+   font-family: 'blanka', sans-serif;
+   color: whitesmoke;
+}
+
+
+.botnavlinks a {
+   display: flex;
+   font-family: 'momcakeb', sans-serif;
+   color: white;
+   text-align: center;
+   justify-content: center;
+   align-self: center;
+   padding: 3vw;
+   min-width: 0; 
 }
 
 a:hover {
-    color: white;
-    font-size: 3vh;
-    font-family: 'momcakeb';
-    text-decoration: underline red;
+   text-decoration: underline #659DBD 2px;
 }
+
+a:visited {
+   text-decoration: none;
+}
+
 
 a:active {
-    color: white;
-    font-size: 3vh;
-    font-family: 'momcakeb';
-    text-decoration: underline;
+   text-decoration: underline #659DBD 2px;
+   color: white;
 }
 
-h1 {
-    font-family: 'momcakeb';
-    font-size: 9.5vh;
-    text-decoration: underline red;
+a {
+   color: white;
+   text-decoration: none;
 }
 
-h2 {
-    font-family: 'momcakeb';
-    font-size: 2.5vh;
+a:after {
+   text-decoration: none;
+   color: white;
 }
 
-p {
-    font-family: 'momcaket';
-    font-size: 2vh;
+
+@media screen and (max-width: 768px) {
+   .topnavlinks {
+      display: none;
+   }
+   
+   .bottomnav {
+      position: fixed;
+   }
+
+   .botnavlinks {
+      display: flex;
+   }
+
+   .initialsbot {
+      display: none;
+   }
+
+   
+   .socialmedialinks {
+      margin-bottom: 10.5vh;
+      margin-top: 1vh;
+   }
+
 }
+
+@media screen and (min-width: 768px) {
+   .botnavlinks {
+      display: none;
+      margin-left: 1vw;
+   }
+
+   .topnavlinks {
+      display: flex;
+   }
+   
+   .initialstop {
+      display: none;
+   }
+
+}
+
+
+
+
+
+
+
