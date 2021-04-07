@@ -63,6 +63,7 @@ header {
    background-color: rgba(0, 0, 0, 0.8);
 }
 
+
 .intro {
    order: 2;
    display: flex;
@@ -71,12 +72,26 @@ header {
    width: 100%;
    height: 100%;
    text-align: center;
-   font-family: 'ipanema';
    text-shadow: 5px 0px 1px black;
-   letter-spacing: 2vw;
-   font-size: 5.53vh;
+   font-family: 'momcaket';
+   font-size: 5vw;
    padding: 2vw;
    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#name {
+   font-family: 'ipanema';
+   text-shadow: 5px 0px 1px black;
+   letter-spacing: 1vw;
+   text-decoration: solid underline overline red;
+   padding: 5vh;
+}
+
+#awesome {
+   font-family: 'momcakeb';
+   text-shadow: 5px 0px 1px black;
+   letter-spacing: 1vw;
+   font-size: 10vw;
 }
 
 .topnavlinks {
@@ -89,9 +104,10 @@ header {
 
 .initialstop {
    align-self: center;
-   font-size: 5vw;
+   font-size: 4vw;
    font-family: 'blanka', sans-serif;
    color: whitesmoke;
+   border-radius: 10%;
 }
 
 
@@ -309,9 +325,10 @@ footer {
 
 .initialsbot {
    align-self: center;
-   font-size: 5vh;
-   font-family: 'blanka', sans-serif;
+   font-size: 4vh;
+   font-family: 'ipanema', sans-serif;
    color: whitesmoke;
+   text-shadow: 1px 0px 1px black;
 }
 
 
