@@ -260,6 +260,17 @@ main {
    text-align: center;
 }
 
+.qwirty {
+   height: 30vh;
+   width: 30vw;
+   border:  #8D8741 solid 5px;
+}
+
+.retrodraw {
+   height: 30vh;
+   width: 30vw;
+   border:  #8D8741 solid 5px;
+}
 
 
 footer {
