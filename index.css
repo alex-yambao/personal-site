@@ -139,6 +139,24 @@ main {
    border-top: #8D8741 solid 2px;
 }
 
+#connectfour {
+   border: solid black 3px;
+   height: 300px;
+   width: 400px;
+}
+
+#qwirty{
+   border: solid black 3px;
+   height: 300px;
+   width: 400px;
+}
+
+#retrodraw {
+   border: solid black 3px;
+   height: 300px;
+   width: 400px;
+}
+
 
 .about {
    display: flex;
